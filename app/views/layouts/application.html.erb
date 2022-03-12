@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ScalaApp</title>
+    <title>Escala</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -12,6 +12,12 @@
 
   <body>
     <%= render(::Layout::Header::Component.new) %>
+    <%= render(::Body::SectionRegistro::Component.new) %>
+    <%= render(::Body::SectionInfo::Component.new) %>
+    <%= render(::Body::SectionProbar::Component.new) %>   
+    <%= render(::Body::SectionVentajas::Component.new) %>
+    <%= render(::Body::SectionPreguntas::Component.new) %>
     <%= yield %>
+    <%= render(::Layout::Footer::Component.new) %>
   </body>
 </html>
