@@ -14,9 +14,13 @@
     <%= render(::Layout::Header::Component.new) %>
     <%= render(::Body::SectionRegistro::Component.new) %>
     <%= render(::Body::SectionInfo::Component.new) %>
-    <%= render(::Body::SectionProbar::Component.new) %>   
+    <%= render(::Body::SectionProbar::Component.new) %>  
+    <%= render(::Body::SeparadorUno::Component.new) %>
     <%= render(::Body::SectionVentajas::Component.new) %>
+    <%= render(::Body::SeparadorDos::Component.new) %>
+    <%= render(::Body::SectionClientes::Component.new) %>
     <%= render(::Body::SectionPreguntas::Component.new) %>
+    <%= render(::Body::SeparadorTres::Component.new) %>
     <%= yield %>
     <%= render(::Layout::Footer::Component.new) %>
   </body>

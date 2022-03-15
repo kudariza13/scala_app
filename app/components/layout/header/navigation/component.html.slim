@@ -1,5 +1,16 @@
 
 navbar [class="bg-white border-gray-200 px-2 sm:py-2.5 rounded dark:bg-gray-800 shadow-md"]
+    div [class="flex flex-wrap py-4 justify-end items-center mx-auto"]
+        ul [class="list-reset md:flex md:items-center"]
+            li [class="md:ml-4"]
+                a [href="#" class="block  py-2 text-grey-darkest hover:text-black md:border-none md:p-0"]+1 (786) 304 2407
+            
+            li [class="md:ml-4"]
+                a [href="#" class="block  py-2 text-grey-darkest hover:text-black md:border-none md:p-0"]Ingresar
+            
+            li [class="md:ml-4"]
+                a [href="#" class="block  py-2 text-grey-darkest hover:text-black md:border-none md:p-0"]Idioma
+    
     div [class=" flex flex-wrap justify-between items-center mx-auto"]
         =render(::Layout::Header::Navigation::Logo::Component.new)
         =render(::Layout::Header::Navigation::Menu::Component.new)
