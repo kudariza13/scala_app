@@ -20,6 +20,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'slim'
 gem 'slim-rails'
 gem 'view_component'
+gem 'stimulus_reflex', '3.4.1'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
