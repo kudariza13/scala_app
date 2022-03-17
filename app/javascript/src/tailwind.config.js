@@ -50,6 +50,7 @@ module.exports = {
                     'pie': '#322C2E',
                     'textog': '#706b6d',
                     'grisf': '#fafafa',
+                    'grissep2': '#363636',
                     'gris': '#9E989A'
                 },
                 success: {
@@ -103,6 +104,12 @@ module.exports = {
             },
             fontFamily: {
                 sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+            },
+            fontSize: {
+                'trece': ['13px', '18px'],
+                'quince': ['15px', '20px'],
+                'veintidos': ['22px', '26px'],
+                'veinticinco': ['25px', '28px'],
             },
             transitionProperty: {
                 'height': 'height',
