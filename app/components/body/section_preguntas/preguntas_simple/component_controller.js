@@ -21,6 +21,7 @@ export default class extends ApplicationController {
     }
     acordeon() {
         console.log("acordeon click")
+
     }
 
 

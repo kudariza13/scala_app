@@ -19,7 +19,7 @@ export default class extends ApplicationController {
 
         console.log("test")
     }
-    acor() {
+    menu() {
         const button = document.querySelector('#menu-button');
         const menu = document.querySelector('#menu');
 

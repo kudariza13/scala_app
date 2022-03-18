@@ -51,6 +51,7 @@ module.exports = {
                     'textog': '#706b6d',
                     'grisf': '#fafafa',
                     'grissep2': '#363636',
+                    'gristpie': '#ADA4A4',
                     'gris': '#9E989A'
                 },
                 success: {
