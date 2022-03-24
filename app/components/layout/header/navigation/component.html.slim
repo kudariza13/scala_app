@@ -1,5 +1,5 @@
 
-navbar [class="bg-white border-gray-200 px-2 sm:py-2.5 rounded shadow-md z-40"]
+navbar [class="bg-white border-gray-200 px-2 sm:py-2.5 rounded shadow-md z-40" data-controller="layout--header--navigation--menu--component"] 
     div [class="flex flex-wrap justify-end items-center mx-auto invisible h-0 md:visible md:py-4 md:h-14"]
         ul [class="list-reset md:flex md:items-center"]
             li [class="flex items-center flex-row md:ml-4"]
@@ -8,12 +8,15 @@ navbar [class="bg-white border-gray-200 px-2 sm:py-2.5 rounded shadow-md z-40"]
                         | +1 (786) 304 2407
             li [class="md:ml-4"]
                 a [href="#" class="inline-block py-2 hover:text-escala-naranja transition duration-500 ease-in-out md:border-none md:p-0"]
-                    svg[viewbox="0 0 448 512" class="w-4 inline-block mr-3"]
-                        path[fill="currentColor" d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"]
+                    i.[class="fa-solid fa-user w-4 inline-block mr-3"]
                     |Ingresar           
             li [class="md:ml-4"]
-                a [href="#" class="inline-block py-2 text-base hover:text-escala-naranja transition duration-500 ease-in-out  md:border-none md:p-0"]
+                a [href="#" class="inline-block py-2 text-base hover:text-escala-naranja transition duration-500 ease-in-out md:border-none md:p-0" data-action="mouseover->layout--header--navigation--menu--component#mouseOverLanguages mouseout->layout--header--navigation--menu--component#mouseOutLanguages"]
                     img[class="w-5 inline-block mr-3" src="https://cdn.escala.com/wp-content/uploads/2020/09/internet.png"]          
-                    |Idioma   
+                    |Idioma
+                    i[class="fa fa-angle-down pl-2"]
+                div[class="p-6 bg-white absolute mt-2 mr-10 space-y-5 shadow rounded-lg hidden" data-layout--header--navigation--menu--component-target="languages"]
+                  a[class="hover:text-escala-naranja cursor-pointer block"]Español
+                  a[class="hover:text-escala-naranja cursor-pointer block"]English
     div [class=" flex flex-wrap justify-between items-center mx-auto"]      
         =render(::Layout::Header::Navigation::Menu::Component.new)

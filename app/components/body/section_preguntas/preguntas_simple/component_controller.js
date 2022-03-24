@@ -17,7 +17,7 @@ export default class extends ApplicationController {
     connect() {
         super.connect()
 
-        console.log("test")
+        console.log("test preguntas")
     }
     acordeon() {
         console.log("acordeon click")
