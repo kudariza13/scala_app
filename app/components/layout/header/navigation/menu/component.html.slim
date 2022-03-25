@@ -1,49 +1,28 @@
-nav.flex.flex-wrap.items-center.justify-between.w-full.py-4.md:py-0  
+nav[class="flex flex-wrap items-center justify-between w-full py-2 md:py-0"] 
     =render(::Layout::Header::Navigation::Logo::Component.new)
-    / svg#menu-button.h-6.w-6.cursor-pointer.md:hidden.block[xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor"  data-action="click->layout--header--navigation--menu--component#menu"]
-    /   path[stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"]
-    / #menu.hidden.w-full.md:flex.md:items-center.md:w-auto
-    /   ul.pt-4.text-base.text-escala-gris.md:flex.md:justify-between.md:pt-0
-    /     li
-    /       a.md:p-4.py-2.blocktransition.duration-300.ease-in-out.hover:text-escala-naranja[href="#"]
-    /         | Funcionalidades
-    /     li
-    /       a.md:p-4.py-2.blocktransition.duration-300.ease-in-out.hover:text-escala-naranja[href="#"]
-    /         | Soluciones
-    /     li
-    /       a.md:p-4.py-2.blocktransition.duration-300.ease-in-out.hover:text-escala-naranja[href="#"]
-    /         | Casos de éxito
-    /     li
-    /       a.md:p-4.py-2.blocktransition.duration-300.ease-in-out.hover:text-escala-naranja[href="#"]
-    /         | Nosotros
-    /     li
-    /       a.md:p-4.py-2.blocktransition.duration-300.ease-in-out.hover:text-escala-naranja[href="#"]
-    /         | Blog
-    /   button.text-white.bg-escala-naranja.border-0.py-2.px-6.focus:outline-none.hover:bg-red-600.rounded.text-lg
-    /     | Probar Escala Ahora
-    div#side-nav.hidden.w-full.md:flex.md:items-center.md:w-auto
+    div#side-nav.w-auto.flex.md:items-center.md:w-auto
       div[class="inline-flex space-x-8 text-gray-400 "]
           div[data-action="mouseover->layout--header--navigation--menu--component#mouseOverFuncionalities mouseout->layout--header--navigation--menu--component#mouseOutFuncionalities"]
               a[class="pt-4 hover:text-escala-naranja cursor-pointer transition duration-300 ease-in-out hidden lg:block"]
                   |Funcionalidades
                   i[class="fa fa-angle-down pl-2"]
-              div[class="p-6 bg-white absolute mt-2 mr-10 space-y-5 shadow rounded-lg hidden" data-layout--header--navigation--menu--component-target="funcionalities"]
-                  a[class="hover:text-escala-naranja cursor-pointer block transition duration-300 ease-in-out"]Page Builder 
-                  a[class="hover:text-escala-naranja cursor-pointer block transition duration-300 ease-in-out"]Anuncios digitales 
-                  a[class="hover:text-escala-naranja cursor-pointer block transition duration-300 ease-in-out"]CRM escala 
-                  a[class="hover:text-escala-naranja cursor-pointer block transition duration-300 ease-in-out"]Email 
-                  a[class="hover:text-escala-naranja cursor-pointer block transition duration-300 ease-in-out"]Automatización 
-                  a[class="hover:text-escala-naranja cursor-pointer block transition duration-300 ease-in-out"]Analíticas
+              div[class="w-48 bg-white absolute mt-2 mr-10 space-y-1 shadow rounded-lg hidden" data-layout--header--navigation--menu--component-target="funcionalities"]
+                  a[class="hover:text-escala-naranja hover:bg-orange-50 p-3 cursor-pointer block rounded-t-lg"]Page Builder 
+                  a[class="hover:text-escala-naranja hover:bg-orange-50 p-3 cursor-pointer block"]Anuncios digitales 
+                  a[class="hover:text-escala-naranja hover:bg-orange-50 p-3 cursor-pointer block"]CRM escala 
+                  a[class="hover:text-escala-naranja hover:bg-orange-50 p-3 cursor-pointer block"]Email 
+                  a[class="hover:text-escala-naranja hover:bg-orange-50 p-3 cursor-pointer block"]Automatización 
+                  a[class="hover:text-escala-naranja hover:bg-orange-50 p-3 cursor-pointer block rounded-b-lg"]Analíticas
           div[data-action="mouseover->layout--header--navigation--menu--component#mouseOverSolutions mouseout->layout--header--navigation--menu--component#mouseOutSolutions"]        
               a[class="pt-4 hover:text-escala-naranja cursor-pointer hidden lg:block"]
                   |Soluciones
                   i[class="fa fa-angle-down pl-2"]
-              div[class="p-6 bg-white absolute mt-2 mr-10 space-y-5 shadow rounded-lg hidden" data-layout--header--navigation--menu--component-target="solutions"]
-                  a[class="hover:text-escala-naranja cursor-pointer block transition duration-300 ease-in-out"]Ventas 
-                  a[class="hover:text-escala-naranja cursor-pointer block transition duration-300 ease-in-out"]Marketing    
+              div[class="w-48 bg-white absolute mt-2 mr-10 space-y-1 shadow rounded-lg hidden" data-layout--header--navigation--menu--component-target="solutions"]
+                  a[class="hover:text-escala-naranja hover:bg-orange-50 p-3 cursor-pointer block rounded-t-lg"]Ventas 
+                  a[class="hover:text-escala-naranja hover:bg-orange-50 p-3 cursor-pointer block rounded-b-lg"]Marketing    
           a[class="pt-4 hover:text-escala-naranja cursor-pointer transition duration-300 ease-in-out hidden lg:block"]Casos de éxito
           a[class="pt-4 hover:text-escala-naranja cursor-pointer transition duration-300 ease-in-out hidden lg:block"]Nosotros
           a[class="pt-4 hover:text-escala-naranja cursor-pointer transition duration-300 ease-in-out hidden lg:block"]Blog
-          a[class="text-white bg-escala-naranja rounded-lg py-3 px-6 "] Prueba Escala Ahora
+          a[class="text-white bg-escala-naranja mt-3 rounded-sm h-7 text-sm py-1 px-2.5 md:h-10 md:text-base md:py-2 md:rounded-md md:px-6 md:mt-2"] Prueba Escala Ahora
           a[class="pt-4 block lg:hidden" id="menu-button" ]
               i[class="fa-solid fa-bars text-2xl text-black cursor-pointer"]

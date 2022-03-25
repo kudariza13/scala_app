@@ -10,13 +10,13 @@ navbar [class="bg-white border-gray-200 px-2 sm:py-2.5 rounded shadow-md z-40" d
                 a [href="#" class="inline-block py-2 hover:text-escala-naranja transition duration-500 ease-in-out md:border-none md:p-0"]
                     i.[class="fa-solid fa-user w-4 inline-block mr-3"]
                     |Ingresar           
-            li [class="md:ml-4"]
-                a [href="#" class="inline-block py-2 text-base hover:text-escala-naranja transition duration-500 ease-in-out md:border-none md:p-0" data-action="mouseover->layout--header--navigation--menu--component#mouseOverLanguages mouseout->layout--header--navigation--menu--component#mouseOutLanguages"]
+            li [class="md:ml-4"  data-action="mouseover->layout--header--navigation--menu--component#mouseOverLanguages mouseout->layout--header--navigation--menu--component#mouseOutLanguages"]
+                a [href="#" class="inline-block py-2 text-base hover:text-escala-naranja transition duration-500 ease-in-out md:border-none md:p-0"]
                     img[class="w-5 inline-block mr-3" src="https://cdn.escala.com/wp-content/uploads/2020/09/internet.png"]          
                     |Idioma
                     i[class="fa fa-angle-down pl-2"]
-                div[class="p-6 bg-white absolute mt-2 mr-10 space-y-5 shadow rounded-lg hidden" data-layout--header--navigation--menu--component-target="languages"]
-                  a[class="hover:text-escala-naranja cursor-pointer block"]Español
-                  a[class="hover:text-escala-naranja cursor-pointer block"]English
+                div[class="bg-white absolute mt-2 mr-10 space-y-1 shadow rounded-lg hidden z-40" data-layout--header--navigation--menu--component-target="languages"]
+                  a[class="hover:text-escala-naranja hover:bg-orange-50 p-3 cursor-pointer block rounded-t-lg"]Español
+                  a[class="hover:text-escala-naranja hover:bg-orange-50 p-3 cursor-pointer block rounded-b-lg"]English
     div [class=" flex flex-wrap justify-between items-center mx-auto"]      
         =render(::Layout::Header::Navigation::Menu::Component.new)
