@@ -19,7 +19,7 @@ export default class extends ApplicationController {
      */
 
     static get targets() {
-        return ["funcionalities", "solutions", "languages", "snav"]
+        return ["funcionalities", "solutions", "languages", "snav", "funcionalitiesRes", "fun", "idi"]
     }
 
     connect() {
@@ -28,7 +28,28 @@ export default class extends ApplicationController {
     }
     menu() {
         console.log('connect menu')
+        if (this.snavTarget.classList.contains("hidden")) {
+            this.snavTarget.classList.remove("hidden")
 
+        } else {
+            this.snavTarget.classList.add("hidden")
+        }
+    }
+    clickFuncionalities() {
+        if (this.funTarget.classList.contains("hidden")) {
+            this.funTarget.classList.remove("hidden")
+
+        } else {
+            this.funTarget.classList.add("hidden")
+        }
+    }
+    clickIdiomas() {
+        if (this.idiTarget.classList.contains("hidden")) {
+            this.idiTarget.classList.remove("hidden")
+
+        } else {
+            this.idiTarget.classList.add("hidden")
+        }
     }
     mouseOverFuncionalities() {
         this.funcionalitiesTarget.classList.remove("hidden")

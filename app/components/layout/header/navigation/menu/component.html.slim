@@ -1,7 +1,7 @@
 nav[class="flex flex-wrap items-center justify-between w-full py-2 md:py-0"] 
     =render(::Layout::Header::Navigation::Logo::Component.new)
-    div#side-nav.w-auto.flex.md:items-center.md:w-auto
-      div[class="inline-flex space-x-8 text-gray-400 "]
+    div[id="side-nav" class="estees w-auto flex md:items-center md:w-auto" ]
+      div[id="slidebtn" class="inline-flex space-x-8 text-gray-400 "]      
           div[data-action="mouseover->layout--header--navigation--menu--component#mouseOverFuncionalities mouseout->layout--header--navigation--menu--component#mouseOutFuncionalities"]
               a[class="pt-4 hover:text-escala-naranja cursor-pointer transition duration-300 ease-in-out hidden lg:block"]
                   |Funcionalidades
@@ -21,8 +21,30 @@ nav[class="flex flex-wrap items-center justify-between w-full py-2 md:py-0"]
                   a[class="hover:text-escala-naranja hover:bg-orange-50 p-3 cursor-pointer block rounded-t-lg"]Ventas 
                   a[class="hover:text-escala-naranja hover:bg-orange-50 p-3 cursor-pointer block rounded-b-lg"]Marketing    
           a[class="pt-4 hover:text-escala-naranja cursor-pointer transition duration-300 ease-in-out hidden lg:block"]Casos de éxito
-          a[class="pt-4 hover:text-escala-naranja cursor-pointer transition duration-300 ease-in-out hidden lg:block"]Nosotros
+          a[class="pt-4 hover:text-escala-naranja cursor-pointer transition duration-300 ease-in-out hidden lg:block" data-layout--header--navigation--menu--component-target="snavNosotros"]Nosotros
           a[class="pt-4 hover:text-escala-naranja cursor-pointer transition duration-300 ease-in-out hidden lg:block"]Blog
           a[class="text-white bg-escala-naranja mt-3 rounded-sm h-7 text-sm py-1 px-2.5 md:h-10 md:text-base md:py-2 md:rounded-md md:px-6 md:mt-2"] Prueba Escala Ahora
-          a[class="pt-4 block lg:hidden" id="menu-button" ]
+          a[class="pt-4 block lg:hidden"  data-action="click->layout--header--navigation--menu--component#menu"]
               i[class="fa-solid fa-bars text-2xl text-black cursor-pointer"]
+      div[class="hidden lg:hidden" data-layout--header--navigation--menu--component-target="snav"]
+        a[class="pt-4 hover:text-escala-naranja cursor-pointer transition duration-300 ease-in-out" ]Ingresar 
+        a[class="pt-4 hover:text-escala-naranja cursor-pointer transition duration-300 ease-in-out" ]+1 (786) 304 2407
+        div[class="" ]
+              a[class="pt-4 hover:text-escala-naranja cursor-pointer transition duration-300 ease-in-out  lg:block" data-action="click->layout--header--navigation--menu--component#clickFuncionalities"]
+                  |Funcionalidades
+                  i[class="fa fa-angle-down pl-2"]
+              div[class="w-48 bg-white absolute mt-2 mr-10 space-y-1 shadow rounded-lg hidden" data-layout--header--navigation--menu--component-target="fun"]
+                  a[class="hover:text-escala-naranja hover:bg-orange-50 p-3 cursor-pointer block rounded-t-lg"]Page Builder 
+                  a[class="hover:text-escala-naranja hover:bg-orange-50 p-3 cursor-pointer block"]Anuncios digitales 
+                  a[class="hover:text-escala-naranja hover:bg-orange-50 p-3 cursor-pointer block"]CRM escala 
+                  a[class="hover:text-escala-naranja hover:bg-orange-50 p-3 cursor-pointer block"]Email 
+                  a[class="hover:text-escala-naranja hover:bg-orange-50 p-3 cursor-pointer block"]Automatización 
+                  a[class="hover:text-escala-naranja hover:bg-orange-50 p-3 cursor-pointer block rounded-b-lg"]Analíticas
+        a[class="pt-4 hover:text-escala-naranja cursor-pointer transition duration-300 ease-in-out" ]Nosotros
+        div[class="" ]
+              a[class="pt-4 hover:text-escala-naranja cursor-pointer transition duration-300 ease-in-out  lg:block" data-action="click->layout--header--navigation--menu--component#clickIdiomas"]
+                  |Idiomas
+                  i[class="fa fa-angle-down pl-2"]
+              div[class="w-48 bg-white absolute mt-2 mr-10 space-y-1 shadow rounded-lg hidden" data-layout--header--navigation--menu--component-target="idi"]
+                  a[class="hover:text-escala-naranja hover:bg-orange-50 p-3 cursor-pointer block rounded-t-lg"]Español
+                  a[class="hover:text-escala-naranja hover:bg-orange-50 p-3 cursor-pointer block"]English
