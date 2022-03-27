@@ -1,4 +1,5 @@
-.w-full 
+.w-full[data-controller="body--section-preguntas--preguntas-simple--component"]
     h2.container.mx-auto.mt-5.text-center.text-3xl.font-bold.mb-6
         |Preguntas Frecuentes 
     =render(::Body::SectionPreguntas::PreguntasSimple::Component.new)
+    =render(::Body::SectionPreguntas::PreguntasAnidadas::Component.new)
