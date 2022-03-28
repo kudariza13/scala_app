@@ -11,7 +11,7 @@ export default class extends ApplicationController {
 
 
     static get targets() {
-        return ["quees", "necesito", "incluye", "funcion", "funcion1", "funcion2", "funcion3", "funcion4", "funcion5", "funcion6", "funcion7", "funcion8", "funcion9", "funcion10", "funcion11", "sobre", "sob1", "sob2", "sob3", "sob4", "sob5", "sob6", "sob7", "sob8", "sob9", "precios", "precio1", "precio2", "seguridad", "seg1", "seg2", "seg3", "seg4", "asesoria", "ase1", "ase2", "entrenamiento", "entre1", "entre2"]
+        return ["quees", "necesito", "incluye", "funcion", "funcion1", "funcion2", "funcion3", "funcion4", "funcion5", "funcion6", "funcion7", "funcion8", "funcion9", "funcion10", "funcion11", "sobre", "sob1", "sob2", "sob3", "sob4", "sob5", "sob6", "sob7", "sob8", "sob9", "precios", "precio1", "precio2", "seguridad", "seg1", "seg2", "seg3", "seg4", "asesoria", "ase1", "ase2", "entrenamiento", "entre1", "entre2", "arrow", "arrow2", "arrow3"]
     }
 
 
@@ -21,29 +21,40 @@ export default class extends ApplicationController {
 
         console.log("test preguntas")
     }
-    acordeon() {
-        console.log("acordeon click")
+    acordeon(event) {
+        event.preventDefault()
         if (this.queesTarget.classList.contains("hidden")) {
             this.queesTarget.classList.remove("hidden")
+            this.arrowTarget.classList.remove("fa-angle-right", "text-escala-azult")
+            this.arrowTarget.classList.add("fa-angle-down", "text-escala-naranja")
 
         } else {
             this.queesTarget.classList.add("hidden")
+            this.arrowTarget.classList.add("fa-angle-right", "text-escala-azult")
+            this.arrowTarget.classList.remove("fa-angle-down", "text-escala-naranja")
+
         }
     }
     acordeon2() {
         if (this.necesitoTarget.classList.contains("hidden")) {
             this.necesitoTarget.classList.remove("hidden")
-
+            this.arrow2Target.classList.remove("fa-angle-right", "text-escala-azult")
+            this.arrow2Target.classList.add("fa-angle-down", "text-escala-naranja")
         } else {
             this.necesitoTarget.classList.add("hidden")
+            this.arrow2Target.classList.add("fa-angle-right", "text-escala-azult")
+            this.arrow2Target.classList.remove("fa-angle-down", "text-escala-naranja")
         }
     }
     acordeon3() {
         if (this.incluyeTarget.classList.contains("hidden")) {
             this.incluyeTarget.classList.remove("hidden")
-
+            this.arrow3Target.classList.remove("fa-angle-right", "text-escala-azult")
+            this.arrow3Target.classList.add("fa-angle-down", "text-escala-naranja")
         } else {
             this.incluyeTarget.classList.add("hidden")
+            this.arrow3Target.classList.add("fa-angle-right", "text-escala-azult")
+            this.arrow3Target.classList.remove("fa-angle-down", "text-escala-naranja")
         }
     }
     funcionalidades() {

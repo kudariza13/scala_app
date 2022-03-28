@@ -1,9 +1,10 @@
 #accordionExample.container.mx-auto.accordion.text-base.lg:text-xl
-  .accordion-item.bg-white.border.border-gray-200.text-escala-textog
+  .accordion-item.bg-white.border.border-gray-200.text-escala-textog.mb-4.rounded.mx-12
     h2#headingOne.accordion-header.mb-0
-      button.font-bold.accordion-button.relative.flex.items-center.w-full.py-4.px-5.text-gray-800.text-left.bg-white.border-0.rounded-none.transition.focus:outline-none[ type="button"  data-action="click->body--section-preguntas--preguntas-simple--component#acordeon"]
+      button.text-base.font-bold.accordion-button.relative.flex.items-center.w-full.py-3.px-5.text-gray-800.text-left.bg-white.border-0.rounded-none.transition.focus:outline-none[ type="button"  data-action="click->body--section-preguntas--preguntas-simple--component#acordeon"]
+        i.fa-solid.fa-angle-right.text-escala-azult.mr-2[data-body--section-preguntas--preguntas-simple--component-target="arrow"]
         |  Qué es Escala
-    #collapseOne.accordion-collapse.collapse
+    #collapseOne
       .text-sm.accordion-body.py-4.px-5.pl-8.pt-0.lg:pl-4.lg:pt-4.hidden[data-body--section-preguntas--preguntas-simple--component-target="quees"]
         p.pb-4
           | Escala es la plataforma todo en uno de marketing digital y ventas que te ayudará a acelerar el éxito de tu negocio, con todas las herramientas en un solo lugar para crecer de una manera constante. Conoce todos los beneficios de Escala:
@@ -32,22 +33,24 @@
             span.text-escala-textog
               |• 
             |  Mide y optimiza tus campañas digitales con las analíticas en tiempo real.
-  .accordion-item.bg-white.border.border-gray-200.text-escala-textog
+  .accordion-item.bg-white.border.border-gray-200.text-escala-textog.mb-4.rounded.mx-12
     h2#headingTwo.accordion-header.mb-0
-      button.font-bold.accordion-button.collapsed.relative.flex.items-center.w-full.py-4.px-5.text-gray-800.text-left.bg-white.border-0.rounded-none.transition.focus:outline-none[type="button"  data-action="click->body--section-preguntas--preguntas-simple--component#acordeon2"]
+      button.text-base.font-bold.accordion-button.collapsed.relative.flex.items-center.w-full.py-3.px-5.text-gray-800.text-left.bg-white.border-0.rounded-none.transition.focus:outline-none[type="button"  data-action="click->body--section-preguntas--preguntas-simple--component#acordeon2"]
+        i.fa-solid.fa-angle-right.text-escala-azult.mr-2[data-body--section-preguntas--preguntas-simple--component-target="arrow2"]
         |  ¿Necesito habilidades para manejar la plataforma?
-    #collapseTwo.accordion-collapse.collapse[aria-labelledby="headingTwo" data-bs-parent="#accordionExample"]
+    #collapseTwo[aria-labelledby="headingTwo" data-bs-parent="#accordionExample"]
       .text-sm.accordion-body.py-4.px-5.pl-8.pt-0.lg:pl-4.lg:pt-4.hidden[data-body--section-preguntas--preguntas-simple--component-target="necesito"]
         p.pb-4
           | No. nuestra herramienta es muy intuitiva y fácil de usar. Para que estés más tranquilo, hemos preparado una serie de tutoriales muy prácticos, que te ayudarán a despejar cualquier duda que tengas mientras vives la experiencia. También puedes contar con nuestro acompañamiento, a través de asesorías, que te serán de gran ayuda en los primeros momentos de uso de la plataforma. 
           a.font-bold.text-escala-azult.cursor-pointer[href="https://escala.com/zoom-meeting"]
             |  Atención al cliente.
        
-  .accordion-item.bg-white.border.border-gray-200.text-escala-textog
+  .accordion-item.bg-white.border.border-gray-200.text-escala-textog.mb-4.rounded.mx-12
     h2#headingThree.accordion-header.mb-0
-      button.font-bold.accordion-button.collapsed.relative.flex.items-center.w-full.py-4.px-5.text-gray-800.text-left.bg-white.border-0.rounded-none.transition.focus:outline-none[type="button" data-action="click->body--section-preguntas--preguntas-simple--component#acordeon3"]
+      button.text-base.font-bold.accordion-button.collapsed.relative.flex.items-center.w-full.py-3.px-5.text-gray-800.text-left.bg-white.border-0.rounded-none.transition.focus:outline-none[type="button" data-action="click->body--section-preguntas--preguntas-simple--component#acordeon3"]
+        i.fa-solid.fa-angle-right.text-escala-azult.mr-2[data-body--section-preguntas--preguntas-simple--component-target="arrow3"]
         |  ¿Qué incluye?
-    #collapseThree.accordion-collapse.collapse[aria-labelledby="headingThree" data-bs-parent="#accordionExample"]
+    #collapseThree[aria-labelledby="headingThree" data-bs-parent="#accordionExample"]
       .text-sm.accordion-body.py-4.px-5.pl-8.pt-0.lg:pl-4.lg:pt-4.hidden[data-body--section-preguntas--preguntas-simple--component-target="incluye"]
         p.pb-4
           | Cuando adquieres cualquiera de los planes de Escala cuentas con: Todas las funcionalidades de marketing digital y ventas, servicio ilimitado y entrenamiento para usar la plataforma.

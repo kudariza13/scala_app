@@ -35,6 +35,7 @@ export default class extends ApplicationController {
             this.snavTarget.classList.add("hidden")
         }
     }
+
     clickFuncionalities() {
         if (this.funTarget.classList.contains("hidden")) {
             this.funTarget.classList.remove("hidden")
